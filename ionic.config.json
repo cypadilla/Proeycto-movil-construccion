@@ -1,0 +1,7 @@
+{
+  "name": "construccion-movil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

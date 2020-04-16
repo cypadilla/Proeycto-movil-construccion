@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Clientes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content padding>
+    <ion-list lines="full">
+        <ion-item *ngIf="cliente">
+          <ion-input required type="text" aria-placeholder="nombre" [(ngModel)]
+          ="cliente.nombre"></ion-input>
+        </ion-item>
+      
+      
+    </ion-list>
+    <ion-button expands="full" (click)="saveTodo()">GUARDAR</ion-button>
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed" color="danger">
+      <ion-fab-button color="danger" routerLink="/" routerDirection="forward" (click)="onRemove(cliente)">
+      <ion-icon name="trash">  
+      </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
+    
+  </ion-content>
+  
